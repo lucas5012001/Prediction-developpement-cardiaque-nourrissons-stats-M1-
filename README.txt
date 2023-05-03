@@ -1,5 +1,6 @@
 /!\ LES DONNEES NE SONT PAS DISPONIBLES SUR LE REPERTOIRE CAR ELLES SONT CONFIDENTIELLES
 
+Collaborateurs : Anaïs DUMAS / Lucas LALOUE / Marie-Anaïs VERDIN / Slimane ZIZI
 
 Nous avons travaillé sur une base de données contenant des variables issues de la décomposition du signal d'électrocardiogrammes de nourrissons. Le but était de prédire leur niveau de développement cardiaque à partir de ces données. Pour cela, nous avons entrainé plusieurs modèles à prédire l'âge post menstruel de nourrissons dont on considérait le développement cardiaque normal. Nous avons notamment utilisé les modèles suivants : régression linéaire, régression linéaire à effets mixtes, forêts aléatoires (random forests), forêts aléatoires prenant en compte des effets mixtes (librairie GPboost), support vector machine (svm), k plus proches voisins (knn) et XGboost. Pour chaque modèle, les hyperparamètres ont été optimisés par validation croisée. Nous avons également utilisé des méthodes de sélection de variables (Lasso, Ridge, Elastic Net, Forward, Backward, Both-directions). Les méthodes qui se sont avérées être les plus efficaces sont celles reposant sur des méthodes d'Ensemble Learning, basées sur la combinaison de forêts aléatoires, de modèles linéaires et de modèles GPboost (forêts aléatoires avec effets mixtes).
 
